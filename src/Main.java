@@ -13,8 +13,6 @@ public class Main {
     static void eq () {
         Scanner scanner = new Scanner(System.in);
 
-        int x = 0;
-
             for (int i = 0; i < 1; i++) {
                 System.out.println("A = Adição \nS = Subtração\nM = Multiplicação\nD = Divisão \n\nE = Sair");
                 String mat = scanner.nextLine();
