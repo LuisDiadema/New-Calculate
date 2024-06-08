@@ -4,8 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Bem-vindo a calculadora\n");
-        System.out.println("Escola a operção\n");
-
         eq();
     }
 
@@ -13,6 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
             for (int i = 0; i < 1; i++) {
+                System.out.println("\nEscola a operção\n");
                 System.out.println("A = Adição \nS = Subtração\nM = Multiplicação\nD = Divisão \n\nE = Sair");
                 String mat = scanner.nextLine();
 
@@ -59,33 +58,33 @@ public class Main {
                 } else if (mat.equals("e") || mat.equals("E")) {
                     break;
                 } else {
-                    System.out.println("Opção invalida, tente novamente!! ");
+                    System.out.println("Opção invalida, tente novamente!! \n\n");
                     eq();
                 }
             }
+            System.out.println("\n\nDeseja fazer uma nova equação ? \n\nS = Sim \nN = Não\n\n");
 
-        while (true) {
+        for (int i = 0; i < 3; i++) {
             String exit = scanner.nextLine();
-            System.out.println("Deseja continuar ? \n\nS = Sim \nN = Não\n\n");
             if (exit.equals("S") || exit.equals("s")){
                 eq();
-            } else if (exit.equals("N") || exit.equals("n")) {
-                System.out.println("Obrigado por usar!!");
+            } else if (exit.equals("N") || exit.equals("n")){
+                System.out.println("Obriado por usar!");
                 break;
             }
         }
     }
 
     static void soma (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 + num4) + "\n\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 + num4));
     }
     static void subtracao (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 - num4) + "\n\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 - num4));
     }
     static void multiplicacao (int num3, int num4){
-        System.out.println("Resultado: " + (num3 * num4) + "\n\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 * num4));
     }
     static void divisao (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 / num4) + "\n\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 / num4));
     }
 }
