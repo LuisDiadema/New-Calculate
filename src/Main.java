@@ -64,7 +64,7 @@ public class Main {
             }
             System.out.println("\n\nDeseja fazer uma nova equação ? \n\nS = Sim \nN = Não\n\n");
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 1; i++) {
             String exit = scanner.nextLine();
             if (exit.equals("S") || exit.equals("s")){
                 eq();
