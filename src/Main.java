@@ -7,7 +7,6 @@ public class Main {
         System.out.println("Escola a operção\n");
 
         eq();
-
     }
 
     static void eq () {
@@ -64,7 +63,8 @@ public class Main {
                     eq();
                 }
             }
-        for (int i = 0; i < 1; i++) {
+
+        while (true) {
             String exit = scanner.nextLine();
             System.out.println("Deseja continuar ? \n\nS = Sim \nN = Não\n\n");
             if (exit.equals("S") || exit.equals("s")){
@@ -77,15 +77,15 @@ public class Main {
     }
 
     static void soma (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 + num4) + "\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 + num4) + "\n\nPrecione entrer para continuar");
     }
     static void subtracao (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 - num4) + "\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 - num4) + "\n\nPrecione entrer para continuar");
     }
     static void multiplicacao (int num3, int num4){
-        System.out.println("Resultado: " + (num3 * num4) + "\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 * num4) + "\n\nPrecione entrer para continuar");
     }
     static void divisao (int num3, int num4) {
-        System.out.println("Resultado: " + (num3 / num4) + "\nPrecione entrer para continuar");
+        System.out.println("Resultado: " + (num3 / num4) + "\n\nPrecione entrer para continuar");
     }
 }
