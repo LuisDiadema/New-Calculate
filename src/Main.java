@@ -7,7 +7,6 @@ public class Main {
         System.out.println("Escola a operção\n");
 
         eq();
-        int x = 32;
     }
 
     static void eq () {
