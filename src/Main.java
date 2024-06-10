@@ -62,15 +62,22 @@ public class Main {
                     eq();
                 }
             }
-            System.out.println("\n\nDeseja fazer uma nova equação ? \n\nS = Sim \nN = Não\n\n");
+    }
+
+    static void nova () {
+        Scanner exit = new Scanner(System.in);
+        System.out.println("\n\nDeseja fazer uma nova equação ? \n\nS = Sim \nN = Não\n\n");
 
         for (int i = 0; i < 1; i++) {
             String exit = scanner.nextLine();
             if (exit.equals("S") || exit.equals("s")){
                 eq();
-            } else if (exit.equals("N") || exit.equals("n")){
+            } else if (exit.equals("N") || exit.equals("s")){
                 System.out.println("Obriado por usar!");
                 break;
+            } else {
+                System.out.println("Opção invalida, Tente novamente!!");
+                nova();
             }
         }
     }
