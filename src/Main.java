@@ -25,6 +25,14 @@ public class Main {
                     int num4 = Integer.parseInt(num2);
 
                     soma(num3, num4);
+                    System.out.println("\nDeseja fazer uma nova operação");
+                    System.out.println("S = Sim |-| N Não");
+                    String continuar = scanner.nextLine();
+                    if (continuar.equals("S") || continuar.equals("s")) {
+                        eq();
+                    } else {
+                        break;
+                    }
                 } else if (mat.equals("S") || mat.equals("s")) {
                     System.out.println("Digite o primeiro número da equação: ");
                     String num1 = scanner.nextLine();
@@ -35,6 +43,14 @@ public class Main {
                     int num4 = Integer.parseInt(num2);
 
                     subtracao(num3, num4);
+                    System.out.println("\nDeseja fazer uma nova operação");
+                    System.out.println("S = Sim |-| N Não");
+                    String continuar = scanner.nextLine();
+                    if (continuar.equals("S") || continuar.equals("s")) {
+                        eq();
+                    } else {
+                        break;
+                    }
                 } else if (mat.equals("M") || mat.equals("m")) {
                     System.out.println("Digite o primeiro número da equação: ");
                     String num1 = scanner.nextLine();
@@ -45,6 +61,14 @@ public class Main {
                     int num4 = Integer.parseInt(num2);
 
                     multiplicacao(num3, num4);
+                    System.out.println("\nDeseja fazer uma nova operação");
+                    System.out.println("S = Sim |-| N Não");
+                    String continuar = scanner.nextLine();
+                    if (continuar.equals("S") || continuar.equals("s")) {
+                        eq();
+                    } else {
+                        break;
+                    }
                 } else if (mat.equals("D") || mat.equals("d")) {
                     System.out.println("Digite o primeiro número da equação: ");
                     String num1 = scanner.nextLine();
@@ -55,6 +79,14 @@ public class Main {
                     int num4 = Integer.parseInt(num2);
 
                     divisao(num3, num4);
+                    System.out.println("\nDeseja fazer uma nova operação");
+                    System.out.println("S = Sim |-| N Não");
+                    String continuar = scanner.nextLine();
+                    if (continuar.equals("S") || continuar.equals("s")) {
+                        eq();
+                    } else {
+                        break;
+                    }
                 } else if (mat.equals("e") || mat.equals("E")) {
                     break;
                 } else {
@@ -67,12 +99,12 @@ public class Main {
     static void nova () {
         Scanner exit = new Scanner(System.in);
         System.out.println("\n\nDeseja fazer uma nova equação ? \n\nS = Sim \nN = Não\n\n");
+        String sair = exit.nextLine();
 
         for (int i = 0; i < 1; i++) {
-            String exit = scanner.nextLine();
-            if (exit.equals("S") || exit.equals("s")){
+            if (sair.equals("S") || sair.equals("s")){
                 eq();
-            } else if (exit.equals("N") || exit.equals("s")){
+            } else if (sair.equals("N") || sair.equals("n")){
                 System.out.println("Obriado por usar!");
                 break;
             } else {
